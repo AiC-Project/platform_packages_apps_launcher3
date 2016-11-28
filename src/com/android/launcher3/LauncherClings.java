@@ -245,10 +245,13 @@ class LauncherClings implements OnClickListener {
     }
 
     public boolean shouldShowFirstRunOrMigrationClings() {
+        /*
         SharedPreferences sharedPrefs = mLauncher.getSharedPrefs();
         return areClingsEnabled() &&
             !sharedPrefs.getBoolean(WORKSPACE_CLING_DISMISSED_KEY, false) &&
             !sharedPrefs.getBoolean(MIGRATION_CLING_DISMISSED_KEY, false);
+        */
+        return false;
     }
 
     public static void synchonouslyMarkFirstRunClingDismissed(Context ctx) {
